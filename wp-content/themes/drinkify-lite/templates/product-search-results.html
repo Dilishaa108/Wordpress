@@ -1,0 +1,41 @@
+<!-- wp:template-part {"slug":"primary-header","tagName":"header","align":"wide","className":"transparent-header-editor"} /-->
+
+<!-- wp:pattern {"slug":"drinkify-lite/archive-header-with-background"} /-->
+
+<!-- wp:group {"tagName":"main","align":"full","layout":{"inherit":true,"type":"constrained"}} -->
+<main class="wp-block-group alignfull">
+    <!-- wp:woocommerce/store-notices /-->
+
+    <!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+    <div class="wp-block-group alignwide"><!-- wp:woocommerce/product-results-count /-->
+
+        <!-- wp:woocommerce/catalog-sorting /-->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:woocommerce/product-collection {"queryId":7,"query":{"perPage":9,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"title","search":"","exclude":[],"inherit":true,"taxQuery":{},"isProductCollectionBlock":true,"featured":false,"woocommerceOnSale":false,"woocommerceStockStatus":["instock","outofstock","onbackorder"],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[],"filterable":false,"relatedBy":{"categories":true,"tags":true}},"tagName":"div","displayLayout":{"type":"flex","columns":4,"shrinkColumns":true},"dimensions":{"widthType":"fill"},"queryContextIncludes":["collection"],"__privatePreviewState":{"isPreview":false,"previewMessage":"Actual products will vary depending on the page being viewed."},"align":"wide"} -->
+    <div class="wp-block-woocommerce-product-collection alignwide"><!-- wp:woocommerce/product-template -->
+        <!-- wp:template-part {"slug":"product-collection"} /-->
+        <!-- /wp:woocommerce/product-template -->
+
+        <!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
+        <!-- wp:query-pagination-previous /-->
+
+        <!-- wp:query-pagination-numbers /-->
+
+        <!-- wp:query-pagination-next /-->
+        <!-- /wp:query-pagination -->
+
+        <!-- wp:woocommerce/product-collection-no-results {"align":"wide"} -->
+        <!-- wp:paragraph -->
+        <p>No products were found matching your selection.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:search {"showLabel":false,"placeholder":"Search products…","buttonText":"Search","query":{"post_type":"product"}} /-->
+        <!-- /wp:woocommerce/product-collection-no-results -->
+    </div>
+    <!-- /wp:woocommerce/product-collection -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer-with-three-columns","tagName":"footer"} /-->
